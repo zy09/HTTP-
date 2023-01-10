@@ -38,7 +38,7 @@
 - HTML 是超文本标记语言的缩写。它基于更通用的 SGML 或标准通用标记语言设计。 HTML 允许内容创建者提供结构、文本、图片和文档链接。在我们的上下文中，也是HTTP 协议传输的主要内容(载荷)。
 - 如前所述，HTTP 是在 Web 上传输资源的最常见方式。它的核心功能是交换消息的请求/响应关系。 HTTP/1.1 版本中的 GET 消息示例如下图所示。
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-05-14-55-32-image.png?msec=1663049304144)
+![](D:\网络\网络相关文章\HTTP 协议\Snipaste_2023-01-10_10-16-29.jpg)
 
 我们将对HTTP 协议字段进行介绍，千万不要忘了每个头部字段后面紧跟的\r\n 也是CRLF 回车换行符。
 
@@ -106,7 +106,7 @@ DNS 不是一个层，而是与 HTTP 相结合的关键应用程序来协助 Web
 
 那时，您的客户端系统将尝试和服务器去建立会话，并发送您的HTTP 请求。 HTTP 流量的简单流程如下图所示
 
-![img](file://D:%5C%E7%BD%91%E7%BB%9C%5C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%5CHTTP%20%E5%8D%8F%E8%AE%AE%5C0151T000003d75nQAA.png?msec=1663049304212)
+![img](D:\网络\网络相关文章\HTTP 协议\2.jpg)
 
 ### 总结
 
@@ -253,13 +253,13 @@ URI 是客户端想要与之交互的资源。请求方法提供了客户端希�
 
 本章我们将介绍客户端服务端和代理三个方面的内容，以及他们和http 协议的关系。
 
-![img](file://D:%5C%E7%BD%91%E7%BB%9C%5C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%5CHTTP%20%E5%8D%8F%E8%AE%AE%5C0151T000003d75nQAA.png?msec=1663049304212)
+![img](D:\网络\网络相关文章\HTTP 协议\33.jpg)
 
 每一段旅程都有起点和终点，但是只要和你一起那么再远的路都是美好的回忆，HTTP 协议也是如此。
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-05-18-36-26-image.png?msec=1663049304140)
+![img](D:\网络\网络相关文章\HTTP 协议\4.jpg)
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-05-18-42-22-image.png?msec=1663049304142)
+![img](D:\网络\网络相关文章\HTTP 协议\5.jpg)
 
 这里我用django 构建的web 服务进行测试。
 
@@ -306,7 +306,7 @@ def hello(request):
 
 下面以负载设备的配置举例了解我们可以对 HTTP 协议数据做哪些操作。
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-07-11-10-43-image.png?msec=1663049304142)
+![img](D:\网络\网络相关文章\HTTP 协议\6.jpg)
 
 Settings
 
@@ -376,15 +376,15 @@ HTTP Strict Transport Security
 
 OneConnect 通过重用现有代理到服务器端连接来减少代理和应用程序服务器之间的连接数量。因此，尽管您可能在客户端有数千个连接，但代理到服务器端连接的数量将会减少，以减轻 tcp 连接监听和拆除的开销。
 
-![img](file://D:%5C%E7%BD%91%E7%BB%9C%5C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%5CHTTP%20%E5%8D%8F%E8%AE%AE%5ConeConnect.png?msec=1663049304213)
+![img](D:\网络\网络相关文章\HTTP 协议\7.jpg)
 
 您可以在上图中看到，在 HTTP/1.1 之前，客户端和服务器端每个连接的单个请求会导致效率低下。使用 HTTP/1.1，您可以在客户端的单个连接上复用请求，如下所示，可以将多个客户端连接复用到单个服务器端连接上。这是 OneConnect 提供的强大功能。
 
-![img](file://D:%5C%E7%BD%91%E7%BB%9C%5C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%5CHTTP%20%E5%8D%8F%E8%AE%AE%5ConeConnect2.png?msec=1663049304210)
+![img](D:\网络\网络相关文章\HTTP 协议\8.jpg)
 
 两个客户端在单个 tcp 连接中对每个客户端的多个请求在 负载 和服务器之间的单个 tcp 连接上汇集在一起。通过 OneConnect 转换，HTTP/1.0 也可以这样做。
 
-![img](file://D:%5C%E7%BD%91%E7%BB%9C%5C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%5CHTTP%20%E5%8D%8F%E8%AE%AE%5ConeConnect3.png?msec=1663049304253)
+![img](D:\网络\网络相关文章\HTTP 协议\9.jpg)
 
 在这种情况下，借助 OneConnect，负载能够使客户端上的四个单独连接在服务器端转换为单个连接。
 
@@ -444,15 +444,15 @@ HTTP 缓存存储与请求关联的响应，并将存储的响应复用于后续
 
 没有缓存的情况:
 
-![img](file://D:%5C%E7%BD%91%E7%BB%9C%5C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%5CHTTP%20%E5%8D%8F%E8%AE%AE%5Cno-chache.png?msec=1663049304253)
+![img](D:\网络\网络相关文章\HTTP 协议\81.jpg)
 
 在这种情况下，来自浏览器的每个请求都与 Web 服务器通信，无论内容更改的频率如何。这是对服务器、网络甚至客户端本身资源的浪费。对于注意力很短暂的用户来说，最重要的资源是时间！与服务器的资源和距离越远，最终用户等待该页面展示的时间就越长。一种改变这种情况的方法是允许在浏览器中进行本地缓存：
 
-![img](file://D:%5C%E7%BD%91%E7%BB%9C%5C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%5CHTTP%20%E5%8D%8F%E8%AE%AE%5Clcoal-cache.png?msec=1663049304196)
+![img](D:\网络\网络相关文章\HTTP 协议\82.jpg)
 
 这样，第一个请求到达 Web 服务器，并且对同一资源的重复请求将从缓存中提取（假设该资源仍然有效，下面将详细介绍。）最后，还有中间缓存。这可以直接存储到离客户端近的地方，例如企业 LAN、内容分发网络(CDN)、数据中心的服务器或以上所有地方！
 
-![img](file://D:%5C%E7%BD%91%E7%BB%9C%5C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%5CHTTP%20%E5%8D%8F%E8%AE%AE%5Ccache2.png?msec=1663049304195)
+![img](D:\网络\网络相关文章\HTTP 协议\83.jpg)
 
 在这种情况下，browser1 客户端请求一个尚未缓存的对象。一旦缓存从服务器获取了资源对象，它就会将其提供给所有浏览器客户端，从而节省了到服务器的请求，节省这样做的时间，并使响应更接近浏览器客户端。
 
@@ -462,17 +462,17 @@ HTTP/1.0 引入了 Pragma、If-Modified-Since、Last-Modified 和 Expires 标头
 
 您可以从浏览器开发人员工具和 Fiddler 和 HttpWatch 等工具中收集到很多信息。
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-08-20-04-15-image.png?msec=1663049304144)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-08-20-04-15-image.png)
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-08-20-05-31-image.png?msec=1663049304145)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-08-20-05-31-image.png)
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-08-20-06-45-image.png?msec=1663049304141)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-08-20-06-45-image.png)
 
 在上面最后一张图，我标记了请求的Cache-Control头，它的值是no-cache。这不是一个很直观的名字，是客户端对缓存的要求，它必须每次都向服务器提交请求，即使内容是新鲜的。这保证了认证得到尊重，同时仍然允许利用中间缓存来传递内容。在响应中，Cache-Control头有两个值：public和max-age。这里的max-age是相当大的，所以这显然是一个预计不会有太大变化的资产。public指令意味着该资源可以被存储在一个共享缓存中。
 
 既然我们已经基本了解了什么是缓存，那么代理是如何处理缓存的呢，我们可以分析下cache 配置文件。
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-08-20-13-54-image.png?msec=1663049304142)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-08-20-13-54-image.png)
 
 ![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-08-20-14-13-image.png?msec=1663049304143)
 
@@ -740,7 +740,7 @@ Web 浏览器是一个集成度很高的软件，浏览器具有定位、检索�
 - UI Backend 用户界面后端
 - Data Persistence 数据持久性存储
 
-![img](file://D:%5C%E7%BD%91%E7%BB%9C%5C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%5CHTTP%20%E5%8D%8F%E8%AE%AE%5CBrowserEngine.png?msec=1663055882181)
+![img](D:\网络\网络相关文章\HTTP 协议\BrowserEngine.png)
 
 ### 浏览器关键组件介绍
 
@@ -764,7 +764,7 @@ Web 浏览器是一个集成度很高的软件，浏览器具有定位、检索�
 
 一旦用户请求特定文档，渲染引擎就会开始获取所请求文档的内容。这是通过网络层完成的。渲染引擎开始以 8 KB 的块从网络层接收该特定文档的内容。之后，渲染引擎的基本流程就开始了。
 
-![img](file://D:%5C%E7%BD%91%E7%BB%9C%5C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%5CHTTP%20%E5%8D%8F%E8%AE%AE%5CScreenshot-2019-11-12-at-3.26.19-PM.png?msec=1663057912699)
+![img](D:\网络\网络相关文章\HTTP 协议\Screenshot-2019-11-12-at-3.26.19-PM.png)
 
 四个基本步骤包括：
 
@@ -773,7 +773,7 @@ Web 浏览器是一个集成度很高的软件，浏览器具有定位、检索�
 3. 此外，渲染树会经历布局过程。在这个阶段，渲染树中的节点在各自的页面上被分配了它们的宽度、高度和 x - y 坐标。浏览器通过从渲染树的根元素到最后一个节点遍历渲染树来确定每个节点的大小和位置。创建渲染树时，不会分配位置或大小值。计算用于评估所需位置的值的整个过程称为布局过程。在这个过程中，每个节点都被分配了精确的坐标。这确保了每个节点都出现在屏幕上的准确位置。
 4. 最后一步是绘制屏幕，其中遍历渲染树，并调用渲染器的paint() 方法，该方法使用UI 后端层绘制屏幕上的每个节点。
 
-![img](file://D:%5C%E7%BD%91%E7%BB%9C%5C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%5CHTTP%20%E5%8D%8F%E8%AE%AE%5Cy6nOa.png?msec=1663058627032)
+![img](D:\网络\网络相关文章\HTTP 协议\y6nOa.png)
 
 针对上上述内容详细信息可参考:
 
@@ -869,7 +869,7 @@ http://aosabook.org/en/500L/a-simple-web-server.html#figure-22.1
 
 通过F12 或者浏览器按钮开发者工具打开DevTools
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-17-30-08-image.png?msec=1663061408174)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-17-30-08-image.png)
 
 - Elements panel :查看和更改 DOM 和 CSS。
 - Console panel : 从控制台查看消息并运行 JavaScript。
@@ -882,7 +882,7 @@ http://aosabook.org/en/500L/a-simple-web-server.html#figure-22.1
 
 ### Elements
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-17-46-18-image.png?msec=1663062378557)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-17-46-18-image.png)
 
 Elements 面板的 DOM 树是您看到的所有直观能看到的内容。可以看到DOM 树 ，HTML 标签的css 样式，布局。关于 Elements 我们遇到常见问题:
 
@@ -905,7 +905,7 @@ CSS:
 
 ### Console
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-18-02-54-image.png?msec=1663063374598)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-18-02-54-image.png)
 
 console panel 是前端开发调试javascript 的工具，javascript 的日志输出和告警都在这里输出。
 
@@ -920,7 +920,7 @@ console panel 是前端开发调试javascript 的工具，javascript 的日志�
 
 ### Sources
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-18-18-44-image.png?msec=1663064324979)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-18-18-44-image.png)
 
 功能:
 
@@ -934,7 +934,7 @@ sources panel 我们可以直观的看到页面加载内容的结构，在问题
 
 ### Network
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-18-50-56-image.png?msec=1663066256312)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-18-50-56-image.png)
 
 Network panel: 我们来到了最常使用的内容部分，这个部分内容非常多。network 是浏览器关于资源相关网络活动的输出。
 
@@ -945,7 +945,7 @@ Network panel: 我们来到了最常使用的内容部分，这个部分内容�
 
 #### 记录网络活动
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-18-56-17-image.png?msec=1663066577202)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-18-56-17-image.png)
 
 网络日志的每一行代表一个资源。默认情况下，资源按时间顺序列出。顶部资源通常是主要的 HTML 文档。底部资源是最后请求的资源。
 
@@ -978,7 +978,7 @@ Network panel: 我们来到了最常使用的内容部分，这个部分内容�
 
 单击资源以了解有关它的更多信息
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-19-25-59-image.png?msec=1663068359689)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-19-25-59-image.png)
 
 **Headers**:显示标题选项卡。使用此选项卡检查 HTTP 标头。
 
@@ -996,21 +996,21 @@ Network panel: 我们来到了最常使用的内容部分，这个部分内容�
 
 点击 搜索按钮会出现侧边栏搜索框，当您需要在所有资源的 HTTP 标头和响应中搜索某个字符串或正则表达式时，请使用“搜索”窗格。
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-19-34-22-image.png?msec=1663068862756)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-19-34-22-image.png)
 
 ##### 过滤资源
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-19-36-18-image.png?msec=1663068978860)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-19-36-18-image.png)
 
 可以按照按字符串、正则表达式或属性过滤、 按资源类型过滤
 
 ##### 显示阻止请求
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-19-38-38-image.png?msec=1663069118516)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-19-38-38-image.png)
 
 高级功能:
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-19-40-56-image.png?msec=1663069257058)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-19-40-56-image.png)
 
 关于其它高级功能参考:https://developer.chrome.com/docs/devtools/network/reference/
 
@@ -1020,13 +1020,13 @@ Network panel: 我们来到了最常使用的内容部分，这个部分内容�
 
 性能界面输出浏览器在加载页面、渲染、布局、等一系列操作所需的时间。
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-19-47-55-image.png?msec=1663069676017)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-19-47-55-image.png)
 
 ### Application
 
 使用“应用程序”面板检查、修改和调试 Web 应用程序、服务工作情况和服务相关缓存。
 
-![img](file://C:%5CUsers%5Czy%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-09-13-19-51-44-image.png?msec=1663069904218)
+![img](D:\网络\网络相关文章\HTTP 协议\2022-09-13-19-51-44-image.png)
 
 可参考:[HTTP cookies - zzzzy09](https://www.cnblogs.com/zy09/p/14004273.html)
 
@@ -1054,7 +1054,7 @@ HTTPS 为 HTTP 协议添加了加密、身份验证和完整性：
 
 实施 SSL/TLS 的网站的 URL 中带有“HTTPS”，而不是“HTTP”。
 
-![](D:\网络\网络相关文章\HTTP 协议\HTTPS\Snipaste_2022-09-19_18-51-50.png)
+![img](D:\网络\网络相关文章\HTTP 协议\HTTPS\Snipaste_2022-09-19_18-51-50.png)
 
 
 
@@ -1067,7 +1067,7 @@ SSL 已经过多次迭代，安全性逐代增强。SSL 在 1999 年更新为 TL
 
 例如:
 
-![](D:\网络\网络相关文章\HTTP 协议\HTTPS\image-20220919185513457.png)
+![](D:\网络\网络相关文章\HTTP 协议\image-20220919185513457.png)
 
 #### SSL 和 TLS 是同一回事吗？
 
@@ -1257,7 +1257,7 @@ X-Frame-Options: SAMEORIGIN
 
 **复制浏览器网络请求到 curl 命令**
 
-![img](file://D:%5C%E7%BD%91%E7%BB%9C%5C%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%5CHTTP%20%E5%8D%8F%E8%AE%AE%5CChrome%20Devtools%5Ccopy-as-curl-in-devtools.png?msec=1663073112474)
+![img](D:\网络\网络相关文章\HTTP 协议\copy-as-curl-in-devtools.png)
 
 参考链接:
 
